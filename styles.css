@@ -32,11 +32,19 @@ body {
 
 }
 
-.about-text p {
+.about-intro {
   margin-top: 15px;
   line-height: 1.6;
   border-left: 4px solid var(--primary);
   padding-left: 15px;
+  text-align: justify;
+}
+
+.about-body {
+  margin-top: 15px;
+  line-height: 1.6;
+  border-right: 4px solid var(--primary);
+  padding-right: 15px;
   text-align: justify;
 }
 
@@ -191,7 +199,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   align-items: center;
-  margin-top: 40px;
+ 
 }
 
 .about-img img {
