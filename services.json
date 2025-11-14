@@ -1,0 +1,27 @@
+[
+  {
+    "iconClass": "fas fa-drafting-compass",
+    "title": "System Design",
+    "description": "Custom-engineered HVAC designs built to handle the rigors of industrial environments."
+  },
+  {
+    "iconClass": "fas fa-tools",
+    "title": "Installation",
+    "description": "End-to-end installation of advanced air systems for factories and warehouses."
+  },
+  {
+    "iconClass": "fas fa-wrench",
+    "title": "Maintenance & Repairs",
+    "description": "Comprehensive maintenance plans to minimize downtime and maximize efficiency."
+  },
+  {
+    "iconClass": "fas fa-sync-alt",
+    "title": "Retrofits & Upgrades",
+    "description": "Modernizing outdated systems to enhance performance and compliance."
+  },
+  {
+    "iconClass": "fas fa-fan",
+    "title": "Ventilation & Cooling",
+    "description": "Design and installation of efficient ventilation and cooling systems for large-scale operations."
+  }
+]
