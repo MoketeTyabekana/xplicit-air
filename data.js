@@ -25,10 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'service-card';
 
-            // Create the icon element
-            const icon = document.createElement('i');
-            // service.iconClass contains the Font Awesome classes, e.g., "fas fa-drafting-compass"
-            icon.className = service.iconClass;
+            // Create the illustration image element
+            const illustration = document.createElement('img');
+            illustration.src = service.imagePath;
+            illustration.alt = service.title;
+            illustration.className = 'service-illustration';
 
             // Create the title element
             const title = document.createElement('h3');
@@ -38,10 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const description = document.createElement('p');
             description.textContent = service.description;
 
+            // Create content wrapper for text
+            const contentWrapper = document.createElement('div');
+            contentWrapper.className = 'service-card-content';
+            contentWrapper.appendChild(title);
+            contentWrapper.appendChild(description);
+
             // Append all elements to the card
-            card.appendChild(icon);
-            card.appendChild(title);
-            card.appendChild(description);
+            card.appendChild(illustration);
+            card.appendChild(contentWrapper);
 
             // Append the card to the grid container
             serviceGrid.appendChild(card);
