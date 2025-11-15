@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./css/hamburger-styles.css" />
     <script defer src="./js/data.js"></script>
     <script defer src="./js/script.js"></script>
+     <script defer src="./js/hamburger-script.js"></script>
   </head>
 
   <body>
@@ -36,16 +37,12 @@
       <div class="top-banner">
         <div class="container banner-content">
           <div class="banner-item">
-            <img src="./assets/images/email.png" alt="Email Us" width="15" height="15" />
-            <a href="mailto:info@xplicitair.co.za">info@xplicitair.co.za</a>
+            <i class="fas fa-envelope"></i>
+            <span>info@xplicitair.co.za</span>
           </div>
+
           <div class="banner-item">
-            <img
-              src="./assets/images/phone-call.png"
-              alt="Email Us"
-              width="15"
-              height="15"
-            />
+            <i class="fas fa-phone"></i>
             <span>072 214 9797 / 079 881 2141</span>
           </div>
         </div>
@@ -92,12 +89,9 @@
     <!-- ABOUT -->
     <section id="about" class="container section">
       <h1>About Us</h1>
-        <div class="contact-divider"></div>
+      <div class="contact-divider"></div>
       <div class="about-grid">
- 
- 
         <div class="about-text">
-         
           <p class="about-intro">
             Xplicit Air is a specialized HVAC solutions provider focused
             exclusively on industrial environments. Based in Durban, South
@@ -130,7 +124,7 @@
     <section id="services" class="section-gray">
       <div class="container">
         <h1>Our Services</h1>
-         <div class="contact-divider"></div>
+        <div class="contact-divider"></div>
         <div class="service-grid" id="service-grid-container"></div>
       </div>
     </section>
@@ -152,7 +146,8 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Xplicit Air Location"></iframe>
+            title="Xplicit Air Location"
+          ></iframe>
         </div>
         <div class="contact-info">
           <div class="contact-item">
@@ -183,36 +178,32 @@
     </section>
 
     <!-- FOOTER -->
-<footer>
-    <div class="main-footer-content container"> 
-        
+    <footer>
+      <div class="main-footer-content container">
         <div class="company-info">
-            <p class="copyright">
-                &copy; <span id="currentYear"></span> Xplicit Air CC
-            </p>
-            <p class="company-details">
-                Reg No: 2009/104693/23 |  Level 1 BBBEE Contributor
-            </p>
-             <p class="company-details">
-   
- </p>
+          <p class="copyright">
+            &copy; <span id="currentYear"></span> Xplicit Air CC
+          </p>
+          <p class="company-details">
+            Reg No: 2009/104693/23 | Level 1 BBBEE Contributor
+          </p>
+          <p class="company-details"></p>
         </div>
 
         <div class="links">
-            <h4 class="links-heading">Quick Links</h4>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <h4 class="links-heading">Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-
-    </div>
-</footer>
+      </div>
+    </footer>
     <!-- EMAIL FLOAT BUTTON -->
     <button id="emailBtn" class="email-btn" title="Email Us">
-      <img src="../assets/images/email.png" alt="Email Us" width="30" height="30" />
+      <i class="fas fa-envelope"></i>
     </button>
   </body>
 </html>
