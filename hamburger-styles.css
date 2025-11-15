@@ -6,45 +6,45 @@
    HAMBURGER BUTTON STYLES
    ============================================================================ */
 
-   .hamburger {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    gap: 4px;
-    z-index: 1001;
-    position: relative;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  gap: 4px;
+  z-index: 1001;
+  position: relative;
 }
 
 .hamburger:focus {
-    outline: 2px solid #3498db;
-    outline-offset: 2px;
-    border-radius: 4px;
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .hamburger-line {
-    width: 28px;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: all 300ms ease-in-out;
-    transform-origin: center;
+  width: 28px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 300ms ease-in-out;
+  transform-origin: center;
 }
 
 /* Hamburger Animation - Active State (transforms to X) */
 .hamburger.active .hamburger-line:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+  transform: translateY(11px) rotate(45deg);
 }
 
 .hamburger.active .hamburger-line:nth-child(2) {
-    opacity: 0;
-    transform: translateX(-10px);
+  opacity: 0;
+  transform: translateX(-10px);
 }
 
 .hamburger.active .hamburger-line:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-11px) rotate(-45deg);
 }
 
 /* ============================================================================
@@ -53,81 +53,87 @@
 
 /* Show hamburger on mobile (below 768px) */
 @media (max-width: 767px) {
-    .hamburger {
-        display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
 
-    /* Hide desktop menu initially */
-    .nav-links {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 120px;
-        transform: translateX(-100%);
-        transition: transform 300ms ease-in-out;
-        z-index: 1000;
-        overflow-y: auto;
-        list-style: none;
-        margin: 0;
-    }
+  /* Hide desktop menu initially */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 
-    /* Mobile menu active state */
-    .nav-links.active {
-        transform: translateX(0);
-        visibility: visible;
-    }
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(12.8px);
+    -webkit-backdrop-filter: blur(12.8px);
+    
 
-    /* Mobile menu items */
-    .nav-links li {
-        width: 100%;
-        border-bottom: 1px solid #e0e0e0;
-        list-style: none;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 120px;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+  }
 
-    .nav-links li:last-child {
-        border-bottom: none;
-    }
+  /* Mobile menu active state */
+  .nav-links.active {
+    transform: translateX(0);
+    visibility: visible;
+  }
 
-    /* Mobile menu links */
-    .nav-links a {
-        display: block;
-        padding: 16px 24px;
-        text-align: left;
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        transition: background-color 150ms ease-in-out;
-    }
+  /* Mobile menu items */
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    list-style: none;
+  }
 
-    .nav-links a:hover,
-    .nav-links a:active {
-        background-color: #f0f0f0;
-    }
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
 
-    /* Adjust nav container for mobile */
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
+  /* Mobile menu links */
+  .nav-links a {
+    display: block;
+    padding: 16px 24px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 150ms ease-in-out;
+  }
 
-    /* Logo sizing for mobile */
-    .logo {
-        flex-shrink: 0;
-    }
+  .nav-links a:hover,
+  .nav-links a:active {
+    background-color: #f0f0f0;
+  }
 
-    .logo img {
-        max-height: 50px;
-        width: auto;
-    }
+  /* Adjust nav container for mobile */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Logo sizing for mobile */
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .logo img {
+    max-height: 50px;
+    width: auto;
+  }
 }
 
 /* ============================================================================
@@ -135,53 +141,53 @@
    ============================================================================ */
 
 @media (min-width: 768px) {
-    .hamburger {
-        display: none !important;
-    }
+  .hamburger {
+    display: none !important;
+  }
 
-    .nav-links {
-        display: flex !important;
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
-        background-color: transparent !important;
-        padding: 0 !important;
-        transform: none !important;
-        z-index: auto !important;
-        overflow: visible !important;
-        list-style: none;
-        gap: 16px;
-        margin: 0;
-    }
+  .nav-links {
+    display: flex !important;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    transform: none !important;
+    z-index: auto !important;
+    overflow: visible !important;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+  }
 
-    .nav-links.active {
-        transform: none !important;
-    }
+  .nav-links.active {
+    transform: none !important;
+  }
 
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .nav-links li {
-        border-bottom: none !important;
-        width: auto !important;
-    }
+  .nav-links li {
+    border-bottom: none !important;
+    width: auto !important;
+  }
 
-    .nav-links a {
-        display: inline-block;
-        padding: 8px 12px;
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        transition: color 150ms ease-in-out;
-        background-color: transparent !important;
-    }
+  .nav-links a {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 150ms ease-in-out;
+    background-color: transparent !important;
+  }
 
-    .nav-links a:hover {
-        color: #3498db;
-    }
+  .nav-links a:hover {
+    color: #3498db;
+  }
 }
 
 /* ============================================================================
@@ -189,49 +195,49 @@
    ============================================================================ */
 
 @media (min-width: 1024px) {
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .nav-links {
-        display: flex !important;
-        list-style: none;
-        gap: 32px;
-        margin: 0;
-    }
+  .nav-links {
+    display: flex !important;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+  }
 
-    .nav-links a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        transition: color 150ms ease-in-out;
-        position: relative;
-        display: inline-block;
-        padding: 8px 0;
-    }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 150ms ease-in-out;
+    position: relative;
+    display: inline-block;
+    padding: 8px 0;
+  }
 
-    .nav-links a:hover {
-        color: #3498db;
-    }
+  .nav-links a:hover {
+    color: #3498db;
+  }
 
-    /* Underline animation on hover */
-    .nav-links a::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 50%;
-        width: 0;
-        height: 2px;
-        background-color: #3498db;
-        transition: all 300ms ease-in-out;
-        transform: translateX(-50%);
-    }
+  /* Underline animation on hover */
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: all 300ms ease-in-out;
+    transform: translateX(-50%);
+  }
 
-    .nav-links a:hover::after {
-        width: 100%;
-    }
+  .nav-links a:hover::after {
+    width: 100%;
+  }
 }
 
 /* ============================================================================
@@ -239,9 +245,9 @@
    ============================================================================ */
 
 .nav-links a:focus-visible {
-    outline: 2px solid #3498db;
-    outline-offset: 2px;
-    border-radius: 4px;
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* ============================================================================
@@ -249,7 +255,7 @@
    ============================================================================ */
 
 body.menu-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* ============================================================================
@@ -257,7 +263,7 @@ body.menu-open {
    ============================================================================ */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* ============================================================================
@@ -265,10 +271,10 @@ html {
    ============================================================================ */
 
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
