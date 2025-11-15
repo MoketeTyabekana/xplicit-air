@@ -1,165 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Xplicit Air specializes in industrial HVAC design, installation, and maintenance for factories, warehouses, and processing facilities across South Africa." />
-  <meta name="keywords" content="Industrial HVAC, Air Conditioning, Ventilation, Refrigeration, Xplicit Air, South Africa" />
-  <meta name="author" content="Xplicit Air" />
-  <title>Xplicit Air | Industrial HVAC Specialists</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Xplicit Air specializes in industrial HVAC design, installation, and maintenance for factories, warehouses, and processing facilities across South Africa."
+    />
+    <meta
+      name="keywords"
+      content="Industrial HVAC, Air Conditioning, Ventilation, Refrigeration, Xplicit Air, South Africa"
+    />
+    <meta name="author" content="Xplicit Air" />
+    <title>Xplicit Air | Industrial HVAC Specialists</title>
 
-  <!-- Font & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="hamburger-styles.css">
-  <script defer src="data.js"></script>
-  <script defer src="hamburger-script.js"></script>
-</head>
+    <!-- Font & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="hamburger-styles.css" />
+    <script defer src="data.js"></script>
+    <script defer src="hamburger-script.js"></script>
+  </head>
 
-<body>
-  <!-- HEADER -->
-  <header>
-    <!-- Top Banner -->
-    <div class="top-banner">
-      <div class="container banner-content">
-        <div class="banner-item">
-          <img src="images/email.png" alt="Email Us" width="15" height="15" />
-          <a href="mailto:info@xplicitair.co.za">info@xplicitair.co.za</a>
-        </div>
-        <div class="banner-item">
-           <img src="images/phone-call.png" alt="Email Us" width="15" height="15" />
-          <span>072 214 9797 / 079 881 2141</span>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- Top Banner -->
+      <div class="top-banner">
+        <div class="container banner-content">
+          <div class="banner-item">
+            <img src="images/email.png" alt="Email Us" width="15" height="15" />
+            <a href="mailto:info@xplicitair.co.za">info@xplicitair.co.za</a>
+          </div>
+          <div class="banner-item">
+            <img
+              src="images/phone-call.png"
+              alt="Email Us"
+              width="15"
+              height="15"
+            />
+            <span>072 214 9797 / 079 881 2141</span>
+          </div>
         </div>
       </div>
-    </div>
-    <nav class="container nav">
-      <div class="logo">
-        <img src="images/logo.png" alt="Xplicit Air Logo" />
+      <nav class="container nav">
+        <div class="logo">
+          <img src="images/logo.png" alt="Xplicit Air Logo" />
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Engineering the Future of Industrial HVAC</h1>
+        <p>
+          Delivering precision, efficiency, and reliability in large-scale air
+          systems across South Africa.
+        </p>
+        <a href="#contact" class="btn-primary">Request a Quote</a>
       </div>
-      
-      <!-- Hamburger Menu Button -->
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-      
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    </section>
 
-  <!-- HERO SECTION -->
-  <section id="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Engineering the Future of Industrial HVAC</h1>
-      <p>Delivering precision, efficiency, and reliability in large-scale air systems across South Africa.</p>
-      <a href="#contact" class="btn-primary">Request a Quote</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="container section">
-    
-    <div class="about-grid">
-      <div class="about-text">
+    <!-- ABOUT -->
+    <section id="about" class="container section">
+      <div class="about-grid">
+        <div class="about-text">
           <h1>About Us</h1>
-        <p class="about-intro">
-          Xplicit Air is a specialized HVAC solutions provider focused exclusively on industrial environments.
-          Based in Durban, South Africa, we design, install, and maintain high-performance systems for factories,
-          warehouses, and production plants — ensuring energy efficiency and operational reliability.
-        </p>
-       
-        <p class="about-body">
-          Our team of experienced engineers and technicians leverage cutting-edge technology and industry best practices
-          to deliver customized solutions that meet the unique demands of large-scale industrial operations.
-          From initial design to ongoing maintenance, Xplicit Air is your trusted partner for all industrial HVAC needs.
-        </p>
-        <div class="core-values">
-          <div><i class="fas fa-bullseye"></i><span>Precision</span></div>
-          <div><i class="fas fa-hard-hat"></i><span>Safety</span></div>
-          <div><i class="fas fa-cogs"></i><span>Reliability</span></div>
-          <div><i class="fas fa-leaf"></i><span>Sustainability</span></div>
+          <p class="about-intro">
+            Xplicit Air is a specialized HVAC solutions provider focused
+            exclusively on industrial environments. Based in Durban, South
+            Africa, we design, install, and maintain high-performance systems
+            for factories, warehouses, and production plants — ensuring energy
+            efficiency and operational reliability.
+          </p>
+
+          <p class="about-body">
+            Our team of experienced engineers and technicians leverage
+            cutting-edge technology and industry best practices to deliver
+            customized solutions that meet the unique demands of large-scale
+            industrial operations. From initial design to ongoing maintenance,
+            Xplicit Air is your trusted partner for all industrial HVAC needs.
+          </p>
+          <div class="core-values">
+            <div><i class="fas fa-bullseye"></i><span>Precision</span></div>
+            <div><i class="fas fa-hard-hat"></i><span>Safety</span></div>
+            <div><i class="fas fa-cogs"></i><span>Reliability</span></div>
+            <div><i class="fas fa-leaf"></i><span>Sustainability</span></div>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="images/about.jpg" alt="Industrial HVAC System" />
         </div>
       </div>
-      <div class="about-img">
-        <img src="images/about.jpg" alt="Industrial HVAC System" />
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- SERVICES -->
     <section id="services" class="section-gray">
-        <div class="container">
-            <h1>Our Services</h1>
-            <div class="service-grid" id="service-grid-container">
-            </div>
-        </div>
+      <div class="container">
+        <h1>Our Services</h1>
+        <div class="service-grid" id="service-grid-container"></div>
+      </div>
     </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="container section">
-    <h1>Contact Us</h1>
-    <div class="contact-divider"></div>
-    <p class="contact-intro">Let's discuss your industrial HVAC needs. Reach out to our team below.</p>
-    <div class="contact-layout">
-      <div class="contact-map">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.5!2d30.95!3d-29.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU3JzAwLjAiUyAzMMKwNTcnMDAuMCJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza&q=13+Khan+Lane,+Isipingo+Rail,+Durban,+4110,+South+Africa"
-          width="100%" 
-          height="100%" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Xplicit Air Location">
-        </iframe>
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <h1>Contact Us</h1>
+      <div class="contact-divider"></div>
+      <p class="contact-intro">
+        Let's discuss your industrial HVAC needs. Reach out to our team below.
+      </p>
+      <div class="contact-layout">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3339.160487862742!2d30.928056!3d-29.9746558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7acf1d153a1d3%3A0x16a87b46b3aa2d1c!2s13%20Khan%20Ln%2C%20Isipingo%20Rail%2C%20Isipingo%2C%204133!5e1!3m2!1sen!2sza!4v1763201610354!5m2!1sen!2sza"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Xplicit Air Location"></iframe>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Address</h3>
+              <p>13 Khan Lane, Isipingo Rail, Durban, 4110</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:info@xplicitair.co.za">info@xplicitair.co.za</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>072 214 9797 / 079 881 2141</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <h3>Address</h3>
-            <p>13 Khan Lane, Isipingo Rail, Durban, 4110</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <h3>Email</h3>
-            <p><a href="mailto:info@xplicitair.co.za">info@xplicitair.co.za</a></p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-phone-alt"></i>
-          <div>
-            <h3>Phone</h3>
-            <p>072 214 9797 / 079 881 2141</p>
-          </div>
-        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p class="copyright">
+          &copy; <span id="currentYear"></span> Xplicit Air CC
+        </p>
+        <p class="company-details">
+          Reg No: 2009/104693/23 | Level 1 BBBEE Contributor
+        </p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p class="copyright">&copy; <span id="currentYear"></span> Xplicit Air CC</p>
-      <p class="company-details">Reg No: 2009/104693/23 | Level 1 BBBEE Contributor</p>
-    </div>
-  </footer>
+    <!-- EMAIL FLOAT BUTTON -->
+    <button id="emailBtn" class="email-btn" title="Email Us">
+      <img src="images/email.png" alt="Email Us" width="30" height="30" />
+    </button>
 
-  <!-- EMAIL FLOAT BUTTON -->
-  <button id="emailBtn" class="email-btn" title="Email Us">
-    <img src="images/email.png" alt="Email Us" width="30" height="30" />
-  </button>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
