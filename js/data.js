@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to render the service cards
     function renderServices(services) {
-        serviceGrid.innerHTML = ''; // Clear any existing content
+        serviceGrid.innerHTML = ''; 
 
         services.forEach(service => {
             const card = document.createElement('div');

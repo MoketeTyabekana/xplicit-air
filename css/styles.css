@@ -127,7 +127,7 @@ header {
 
 /* HERO */
 #hero {
-  background: url("images/xplicit-hero.jpg.jpeg") center/cover no-repeat;
+  background: url("/assets/images/xplicit-hero.jpg.jpeg") center/cover no-repeat;
   position: relative;
   height: 90vh;
   display: flex;
@@ -529,4 +529,5 @@ footer .main-footer-content {
   .contact-map {
     min-height: 300px;
   }
+
 }

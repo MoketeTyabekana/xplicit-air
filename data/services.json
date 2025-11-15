@@ -1,22 +1,22 @@
 [
  
   {
-    "imagePath": "images/Illustration.png",
+    "imagePath": "./assets/images/Illustration.png",
     "title": "Installation",
     "description": "End-to-end installation of advanced air systems for factories and warehouses."
   },
   {
-    "imagePath": "images/Maintenance.png",
+    "imagePath": "./assets/images/Maintenance.png",
     "title": "Maintenance & Repairs",
     "description": "Comprehensive maintenance plans to minimize downtime and maximize efficiency."
   },
   {
-    "imagePath": "images/Retrofits.png",
+    "imagePath": "./assets/images/Retrofits.png",
     "title": "Retrofits & Upgrades",
     "description": "Modernizing outdated systems to enhance performance and compliance."
   },
   {
-    "imagePath": "images/Ventilation.png",
+    "imagePath": "./assets/images/Ventilation.png",
     "title": "Ventilation & Cooling",
     "description": "Design and installation of efficient ventilation and cooling systems for large-scale operations."
   }
