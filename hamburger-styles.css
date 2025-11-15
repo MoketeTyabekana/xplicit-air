@@ -1,0 +1,274 @@
+/* ============================================================================
+   RESPONSIVE HAMBURGER MENU - CSS ADDITIONS (FIXED)
+   ============================================================================ */
+
+/* ============================================================================
+   HAMBURGER BUTTON STYLES
+   ============================================================================ */
+
+   .hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    gap: 4px;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.hamburger-line {
+    width: 28px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 300ms ease-in-out;
+    transform-origin: center;
+}
+
+/* Hamburger Animation - Active State (transforms to X) */
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* ============================================================================
+   RESPONSIVE NAVIGATION - MOBILE STYLES
+   ============================================================================ */
+
+/* Show hamburger on mobile (below 768px) */
+@media (max-width: 767px) {
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide desktop menu initially */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 120px;
+        transform: translateX(-100%);
+        transition: transform 300ms ease-in-out;
+        z-index: 1000;
+        overflow-y: auto;
+        list-style: none;
+        margin: 0;
+    }
+
+    /* Mobile menu active state */
+    .nav-links.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    /* Mobile menu items */
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+        list-style: none;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    /* Mobile menu links */
+    .nav-links a {
+        display: block;
+        padding: 16px 24px;
+        text-align: left;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: background-color 150ms ease-in-out;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:active {
+        background-color: #f0f0f0;
+    }
+
+    /* Adjust nav container for mobile */
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Logo sizing for mobile */
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        max-height: 50px;
+        width: auto;
+    }
+}
+
+/* ============================================================================
+   TABLET ADJUSTMENTS
+   ============================================================================ */
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        transform: none !important;
+        z-index: auto !important;
+        overflow: visible !important;
+        list-style: none;
+        gap: 16px;
+        margin: 0;
+    }
+
+    .nav-links.active {
+        transform: none !important;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links li {
+        border-bottom: none !important;
+        width: auto !important;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 150ms ease-in-out;
+        background-color: transparent !important;
+    }
+
+    .nav-links a:hover {
+        color: #3498db;
+    }
+}
+
+/* ============================================================================
+   LARGE DESKTOP ADJUSTMENTS
+   ============================================================================ */
+
+@media (min-width: 1024px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex !important;
+        list-style: none;
+        gap: 32px;
+        margin: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 150ms ease-in-out;
+        position: relative;
+        display: inline-block;
+        padding: 8px 0;
+    }
+
+    .nav-links a:hover {
+        color: #3498db;
+    }
+
+    /* Underline animation on hover */
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #3498db;
+        transition: all 300ms ease-in-out;
+        transform: translateX(-50%);
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+}
+
+/* ============================================================================
+   ACCESSIBILITY
+   ============================================================================ */
+
+.nav-links a:focus-visible {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ============================================================================
+   PREVENT BODY SCROLL WHEN MENU IS OPEN
+   ============================================================================ */
+
+body.menu-open {
+    overflow: hidden;
+}
+
+/* ============================================================================
+   SMOOTH SCROLLING
+   ============================================================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============================================================================
+   REDUCE MOTION FOR ACCESSIBILITY
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
