@@ -404,10 +404,26 @@ footer .main-footer-content {
 
 
 .company-info p {
-    margin: 0 0 5px 0; 
-    text-align: left; 
+    margin: 20px 0 0 0; 
+    text-align: center; 
+    padding: 20px 0 ;
+    border-top: 0.5px solid #dddddd86;
+    width: 1200px;
 }
 
+.company-info{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading{
+    font-size: 1.5rem;
+     margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff; 
+}
 
 .links-heading {
     margin-top: 0;
@@ -417,6 +433,8 @@ footer .main-footer-content {
 }
 
 .links ul {
+  display: flex;
+  flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -434,6 +452,10 @@ footer .main-footer-content {
 
 .links a:hover {
     color: var(--primary-color, #007bff); 
+}
+
+.footer-text{
+    max-width: 400px;
 }
 
 
@@ -460,16 +482,13 @@ footer .main-footer-content {
     }
     
     .links a {
-        padding: 5px 10px;
+        padding: 5px 0;
         border-radius: 4px;
         border: 1px solid transparent;
         white-space: nowrap; 
     }
     
     
-    .links-heading {
-        display: none; 
-    }
 }
 
 /* EMAIL BUTTON */
