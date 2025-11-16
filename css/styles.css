@@ -178,7 +178,7 @@ header {
 
 /* SECTIONS */
 .section {
-  padding: 80px 20px;
+  padding: 40px 20px;
 }
 
 .section h2 {
@@ -314,17 +314,21 @@ header {
 
 .contact-map {
   width: 100%;
-  height: 100%;
+  height: 70%;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-map iframe {
+.contact-map img {
   width: 100%;
   height: 100%;
   border: none;
   display: block;
+  object-fit: cover;
+
+  border-radius: 8px;
+
 }
 
 .contact-info {
@@ -529,5 +533,6 @@ footer .main-footer-content {
   .contact-map {
     min-height: 300px;
   }
+
 
 }
