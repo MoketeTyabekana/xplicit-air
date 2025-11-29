@@ -553,5 +553,10 @@ footer .main-footer-content {
     min-height: 300px;
   }
 
+  .company-info p {
+   text-align: start;
+    padding:20px;
+}
+
 
 }
